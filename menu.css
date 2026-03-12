@@ -1,0 +1,359 @@
+/* Reset and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f5e5df;
+}
+
+/* Header Styles */
+header {
+    background: #C8A27C;
+    box-shadow: 0 0 10px rgba(216, 169, 98, 0.789);
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #A68FB6;
+    display: block;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px; /* Add space between buttons */
+}
+
+.nav-buttons .button {
+    display: flex;
+    align-items: center;
+    background-color: #492409;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-buttons .button:hover {
+    background-color: #9c6627
+}
+
+.nav-buttons .login-button {
+    background-color: #492409;
+}
+
+.nav-buttons .login-button i {
+    margin-right: 8px;
+}
+
+/* Sub-navigation Styles */
+h1 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    color: #fac031;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.sub-nav {
+    background: #dec5ac;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.sub-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-nav li {
+    margin: 0 15px;
+}
+
+.sub-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sub-nav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Centering h2 Elements */
+section h2 {
+    text-align: center;
+}
+
+/* Menu Styles */
+.menu {
+    width: 80%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.menu .menu_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.menu .menu_card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.menu .menu_card:hover {
+    transform: translateY(-10px);
+}
+
+.menu .menu_image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.menu .menu_card:hover .menu_image img {
+    transform: scale(1.1);
+}
+
+.menu .menu_info {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu .menu_info h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.menu .menu_info h3 {
+    font-size: 20px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.menu .menu_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu .menu_btn:hover {
+    background-color: #555;
+}
+
+/* Cart Dashboard Styles */
+.cart_dashboard {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: right 0.3s;
+    z-index: 1000;
+}
+
+.cart_dashboard.active {
+    right: 0;
+}
+
+.cart_dashboard .close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff0000;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.cart_dashboard h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#cartItems {
+    margin-bottom: 20px;
+}
+
+.cart_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart_item .item_info {
+    display: flex;
+    gap: 10px;
+}
+
+.cart_item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.cart_item h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.cart_item p {
+    font-size: 16px;
+    margin: 0;
+    color: #666;
+}
+
+.cart_item .remove-btn {
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.cart_dashboard h3 {
+    font-size: 24px;
+}
+
+.payment_options {
+    margin-top: 20px;
+}
+
+.payment_options label {
+    display: block;
+    margin: 10px 0;
+}
+
+.checkout_btn {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.checkout_btn:hover {
+    background-color: #555;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup_content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.popup_content .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ff0000;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+    }
+
+    .menu .menu_box {
+        grid-template-columns: 1fr;
+    }
+
+    .cart_dashboard {
+        width: 100%;
+    }
+}
