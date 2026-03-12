@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url('../img/menu.jpg'); 
+    
+}
+
+.header {
+    background-color: #6f4f28; 
+    color: #f5f5f5; 
+    padding: 20px;
+    position: relative;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-items li {
+    margin-right: 20px;
+}
+
+.nav-items a {
+    color: #f5f5f5; 
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-items button {
+    background-color: #6f4f28; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-items button a {
+    color: #f5f5f5; 
+    text-decoration: none;
+}
+
+.nav-items button:hover {
+    background-color: #f5f5f5;
+}
+
+.nav-items button:hover a {
+    color: #6f4f28; 
+
+}
+/* Table Styles */
+table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    
+}
+
+thead th {
+    background-color: #6f4f28;
+    color: #f5f5f5; 
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+tbody td {
+    background-color: #95714f; 
+    color: #f5f5f5;
+    border: 1px solid #95714f;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #4e3a29;
+}
+
+/* Action Links Styles */
+.btn1, .btn2 {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.btn1 {
+    background-color: #6f4f28; 
+    color: #f5f5f5; 
+}
+
+.btn2 {
+    background-color: #4e3a29; 
+    color: #f5f5f5; 
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: #f5f5f5; 
+    color: #6f4f28; 
+}
+
+.btn2:hover {
+    color: #3e2a1f; 
+}
+
+/* Insert Button Styles */
+.insert {
+    position: absolute;
+    background-color: #6f4f28; 
+    border-color: #f5f5f5; 
+    max-width: 200px;
+    padding: 10px;
+    bottom: 25px;
+    margin-left: 85%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.insert a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.insert:hover {
+    background-color: #f5f5f5;
+    color: #6f4f28;
+    border-color: #6f4f28; 
+}

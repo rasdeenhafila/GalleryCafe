@@ -1,0 +1,77 @@
+a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+/* Header Styles */
+.header {
+    background-color: #553e13;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .header .title {
+    font-size: 24px;
+    margin: 0;
+  }
+/* form.css */
+
+/* Form Container */
+form {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 60px auto;
+    border: 1px solid #b2dfdb;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4b2e12;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #6f531e;
+}
+
+form input[type="text"],
+form input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #573117;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #553e13;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 20%;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #553e13;
+}
