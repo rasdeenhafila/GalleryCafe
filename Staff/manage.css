@@ -1,0 +1,97 @@
+/* Table styles */
+table {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    top: 125px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    position: absolute;
+}
+
+/* Header styles */
+th {
+    background-color: #6f4e37; 
+    border: 1px solid #3e2723; 
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff5e1; 
+}
+
+/* Cell styles */
+td {
+    background-color: #3e2723; 
+    color: #fff5e1; 
+    border: 1px solid #6f4e37; 
+    padding: 10px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* Action links styles */
+.btn1 {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #d7b49e; 
+    color: #3e2723;
+    border-radius: 3px;
+    border: 1px solid #6f4e37; 
+}
+
+.btn1 a {
+    color: #3e2723; 
+    text-decoration: none;
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #b56959; 
+    color: #fff5e1; 
+    border-radius: 3px;
+    border: 1px solid #6f4e37; 
+}
+
+.btn2 a {
+    color: #fff5e1;
+    text-decoration: none;
+}
+
+.btn1:hover {
+    background-color: #3e2723; 
+    color: #fff5e1; 
+}
+
+.btn2:hover {
+    background-color: #3e2723;
+    color: #fff5e1; 
+}
+
+/* --------------- ADD NEW FOOD --------------- */
+
+.insert {
+    position: absolute;
+    background-color: #d7b49e; 
+    border-color: #6f4e37; 
+    max-width: 150px;
+    padding: 10px;
+    bottom: 25px;
+    margin-left: 85%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.insert a {
+    color: #3e2723;
+    text-decoration: none;
+}
+
+.insert:hover {
+    background-color: #3e2723; 
+    color: #fff5e1; 
+    border-color: #6f4e37; 
+}

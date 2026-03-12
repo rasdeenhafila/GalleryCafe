@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="staffDashboard.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-bar">
+          <h1 class="title"><span>The Gallery Cafe</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <ul>
+                <a href="http://localhost/Gallerycafe/Staff/menu_data.php"><li>MENU</li></a><br>
+                <a href="http://localhost/Gallerycafe/Staff/reservation_data.php"><li>RESERVATIONS</li></a><br>
+                <a href="https://docs.google.com/forms/d/1A67SWiv5Jx5bs_rZ25sMnQ5JIUyj4ZeyuIYag4-MKhI/edit#responses"><li>Feedback</li></a><br>
+                <a href="http://localhost/Gallerycafe/Homepage.php"><li>LOGOUT</li></a>
+            </ul>
+        </div>
+    </div>   
+</body>
+</html>
